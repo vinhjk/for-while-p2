@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt("Enter a number:"));
+    let firstNum = 0;
+    let secondNum = 1;
+    let a, b;
+
+    document.write(firstNum + "  " + secondNum);
+    for (let i = 1; i <= num - 2; i++) {
+        a = firstNum + secondNum;
+        document.write("  " + a + "  ");
+        b = firstNum;
+        firstNum = secondNum;
+        secondNum = a;
+    }
+</script>
+</body>
+</html>

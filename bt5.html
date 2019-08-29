@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let firstMoney = parseFloat(prompt("Nhap so tien vay ban dau :"));
+    let month = parseFloat(prompt("Nhap so thang cho vay: "));
+    let lS = parseFloat(prompt("Nhap so lai suat hang thang :"));
+    let x = 1;
+    let lastMoney;
+    for (let i = 1; i <= month; i++) {
+        x *= (1 + lS);
+    }
+    lastMoney = firstMoney * x;
+    alert("So tien ca von va lai la :" + lastMoney);
+</script>
+</body>
+</html>
